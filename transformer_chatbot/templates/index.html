@@ -370,8 +370,14 @@ input.textarea {
 
             <div id="text-box" class="row top-padding">
                 <div class="col-md-12">
-                    <input id="myInput" type="text" class="textarea" v-bind:placeholder="placeholder" v-model="input" v-bind:class="{ 'border-danger': send_blank}" v-on:change="check_content">
-                    <input id="myBtn" class="send-btn" type="submit" value="Submit" v-on:click="add_message">
+                    <input id="myInput" type="text" class="textarea" 
+                    v-bind:placeholder="placeholder" v-model="input" 
+                    v-bind:class="{ 'border-danger': send_blank}" 
+                    v-on:change="check_content"
+                    onkeydown = "if (event.keyCode == 13)
+                        document.getElementById('myBtn').click()"
+                    >
+                    <input id="myBtn" class="send-btn" type="submit" value="Submit" v-on:click="add_message" style="display: none;">
                 </div>
             </div>
         </div>
