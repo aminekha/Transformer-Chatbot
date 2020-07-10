@@ -15,8 +15,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from chatbot.views import get_response
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('chatbot.urls')),
+    path('get-response/', get_response),
 ]

@@ -26,7 +26,7 @@ window.onload = function () {
 				this.send_blank = false;
 				this.placeholder = "Send a message to the chatbot...";
 
-				fetch("/", {
+				fetch("/get-response/", {
 			        body: JSON.stringify({'message': message['text']}),
 			        cache: 'no-cache', 
 			        credentials: 'same-origin', 
