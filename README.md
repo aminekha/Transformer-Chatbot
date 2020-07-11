@@ -1,4 +1,6 @@
 # Transformer Chatbot
+<img style="width: 100%;" src="screenshot.png">
+
 ## Introduction
 Transformer chatbot is a web app built using Transformers, Tensorflow 2.0, and Django using the Cornell Movie-Dialogs Corpus Dataset (<a href="https://www.cs.cornell.edu/~cristian/Cornell_Movie-Dialogs_Corpus.html">Link Here</a>).
 
