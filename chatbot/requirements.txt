@@ -1,6 +1,6 @@
 tensorflow-datasets==1.2.0
 tensorflow==2.0.1
-django==2.2.13
+django==2.2.21
 json
 numpy
 matplotlib
